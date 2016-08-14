@@ -1,0 +1,310 @@
+﻿@{
+    ViewBag.Title = "My CV";
+}
+<div class="container-fluid">
+    <div class="cntr">
+        <h2>@ViewBag.Title.</h2>
+        <h3>@ViewBag.Message</h3>
+
+        <hr />
+        <span class=" glyphicon glyphicon-education"></span>
+        <h1> Education </h1>
+        <hr />
+    </div>
+    <div class="panel-group" id="education">
+        <a data-toggle="collapse" data-parent="#education" href="#collapseNCL">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-6"><h2 class="panel-title">Newcastle University 2013-2016</h2></div>
+                        <div class="col-lg-6 right"><span class="glyphicon glyphicon-collapse-down"></span></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div id="collapseNCL" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h3>Computer Science BSc Honours: 2:1 Honours</h3>
+                        <h4>Key Skills gained:</h4>
+                        <ul>
+                            <li>
+                                Experienced gained in a variety of front end web technologies including: HTML5,
+                                CSS3,
+                                AngularJS and XHTML to build several web sites over the course of the degree.
+                            </li>
+                            <li>
+                                Using both Adobe creative suite and open source alternatives for creating
+                                graphics and
+                                manipulating images to assist in web design modules.
+                            </li>
+                            <li>
+                                Developed skills using a variety of back end web technologies including: PHP,
+                                Symfony PHP
+                                Framework, MySQL and SQLite, to store data support the web sites created in the
+                                degree.
+                            </li>
+                            <li>
+                                Keen interest in HCI and Interaction design developed through creating personas,
+                                wire
+                                frames, Hierarchical Task Analysis diagrams and physical prototypes.
+                            </li>
+                            <li>
+                                Experience with developing Android mobile applications as part of a team project
+                                and mobile
+                                development module in documentation, programming and designing roles.
+                            </li>
+                            <li>
+                                Experience with setting up and maintaining web servers using Linux based
+                                operating systems
+                                such as redhat.
+                            </li>
+                            <li>
+                                A decent level of experience with programming in Java and some experience with
+                                nesC and
+                                assembly level languages.
+                            </li>
+                        </ul>
+                        <h4>Notable Modules:</h4>
+
+                        <ul></ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img src="@Url.Content("~/Content/Images/cv/nclWeb.png")" alt="NewcastleUni"
+                             class="img-responsive img-rounded cntr" id="NewcastleUniImg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a data-toggle="collapse" data-parent="#education" href="#collapseBROCK">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-6 "><h2 class="panel-title">Brockenhurst College 2011-2013</h2></div>
+                    <div class="col-lg-6 right"><span class="glyphicon glyphicon-collapse-down"></span></div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <div id="collapseBROCK" class="panel-collapse collapse">
+        <div class="panel-body">
+            <h3>Btec Level 3 Extended Diploma: ICT Practitioner</h3>
+            <p>Distinction*, Distinction*, Distinction*</p>
+            <br />
+            <h3>Cisco CCNA Exploration: Network Fundamentals</h3>
+            <div class="container-fluid">
+                <img src="@Url.Content("~/Content/Images/cv/Cisco_CCNA.png")" class="cvIcon caption" />
+                <p class="caption">Pass</p>
+            </div>
+            <br />
+            <h3>Microsoft Office Specialist 2010:</h3>
+            <div class="container-fluid">
+                <img src="@Url.Content("~/Content/Images/cv/Word.png")" class="cvIcon"
+                     alt="Microsoft Word" />
+                <img src="@Url.Content("~/Content/Images/cv/powerpoint.png")" class="cvIcon"
+                     alt="Microsoft Powerpoint" />
+                <img src="@Url.Content("~/Content/Images/cv/Access.png")" class="cvIcon"
+                     alt="Microsoft Word Access" />
+                <img src="@Url.Content("~/Content/Images/cv/Outlook.png")" class="cvIcon"
+                     alt="Microsoft Outlook" />
+                <img src="@Url.Content("~/Content/Images/cv/Excel.png")" class="cvIcon"
+                     alt="Microsoft Excel" />
+            </div>
+        </div>
+    </div>
+    <a data-toggle="collapse" data-parent="#education" href="#collapseNVQ">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-6 "><h2 class="panel-title">City and Guilds 2010-2011</h2></div>
+                    <div class="col-lg-6 right"><span class="glyphicon glyphicon-collapse-down"></span></div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <div id="collapseNVQ" class="panel-collapse collapse">
+        <div class="panel-body">
+            <h3>Level 2 NVQ in Hospitality: Professional Cookery</h3>
+            <div class="container-fluid">
+                <img src="@Url.Content("~/Content/Images/cv/city&guilds.gif")" class="cvIcon caption"
+                     alt="City & Guilds" />
+                <p class="caption">Pass</p>
+            </div>
+        </div>
+    </div>
+    <a data-toggle="collapse" data-parent="#education" href="#collapseBP">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-6 "><h2 class="panel-title">Barton Peveril College 2009-2010</h2></div>
+                    <div class="col-lg-6 right"><span class="glyphicon glyphicon-collapse-down"></span></div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div id="collapseBP" class="panel-collapse collapse">
+        <div class="panel-body">
+            <h3>A-Levels</h3>
+            <table class="table-striped cntr resTable">
+                <thead>
+                    <tr>
+                        <th>SUBJECT</th>
+                        <th>GRADE ACHIEVED</th>
+                    </tr>
+                <thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <a data-toggle="collapse" data-parent="#education" href="#collapseMBS">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-6 "><h2 class="panel-title">The Mountbatten School 2004-2009</h2></div>
+                    <div class="col-lg-6 right"><span class="glyphicon glyphicon-collapse-down"></span></div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div id="collapseMBS" class="panel-collapse collapse">
+        <div class="panel-body">
+            <h2>GCSEs</h2>
+
+            <table class="table-striped cntr resTable">
+                <thead>
+                    <tr>
+                        <th>SUBJECT</th>
+                        <th>GRADE ACHIEVED</th>
+                    </tr>
+                <thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="cntr">
+        <hr />
+        <span class="glyphicon glyphicon-wrench"></span>
+        <h1>Work Experience</h1>
+        <hr />
+    </div>
+    <div class="panel-group" id="workxp">
+        <a data-toggle="collapse" data-parent="#workxp" href="#chef">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-6 "><h2 class="panel-title">Trainee Chef 2010-2013</h2></div>
+                        <div class="col-lg-6 right"><span class="glyphicon glyphicon-collapse-down"></span></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div id="chef" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div class="cntr">
+                    <h3>Employer: </h3>
+                    <p>The Old House at Home, Public House, Romsey.</p>
+                    <h3>Position: </h3>
+                    <p>Trainee Chef / Kitchen Assistant</p>
+                    <h3>Job Roles and responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Preparing and cooking a variety of dishes to a high standard.
+                        </li>
+                        <li>
+                            Setting up and closing the kitchen.
+                        </li>
+                        <li>
+                            Maintaining high standards of hygiene and ensuring that stock was being correctly dated
+                            and
+                            rotated.
+                        </li>
+                        <li>
+                            Effective teamwork and communication during service while working with a small team of
+                            two
+                            to three other team members.
+                        </li>
+                        <li>
+                            Working independently and efficiently in the gaps in service to ensure that the team was
+                            well stocked and prepared.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <a data-toggle="collapse" data-parent="#workxp" href="#ka">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-6 "><h2 class="panel-title">Kitchen Assistant 2009-2010</h2></div>
+                        <div class="col-lg-6 right">
+                            <span class="glyphicon glyphicon-collapse-down"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div id="ka" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="cntr">
+                    <h3>Employer: </h3>
+                    <p>The Old House at Home, Public House, Romsey.</p>
+                    <h3>Position: </h3>
+                    <p>Kitchen Assistant</p>
+                    <ul>
+                        <li>
+                            Efficiently managing loads of dishes to be washed and dried.
+                        </li>
+                        <li>
+                            Basic food preparation including vegetables and desserts.
+                        </li>
+                        <li>
+                            Assisting head chef by clearing down and ensuring that the working environment was clear
+                            and
+                            tidy.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a data-toggle="collapse" data-parent="#workxp" href="#stk">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-lg-6 "><h2 class="panel-title">Stacker 2013-2016</h2></div>
+                        <div class="col-lg-6 right">
+                            <span class="glyphicon glyphicon-collapse-down"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div id="stk" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="cntr">
+                    <h3>Employer: </h3>
+                    <p>East Brothers Timber, Salisbury.</p>
+                    <h3>Position: </h3>
+                    <p>Stacker / Saw Operator</p>
+
+                    <ul>
+                        <li>Maintaining and running an industrial saw.</li>
+                        <li>Ensuring that health and safety procedures were being followed.</li>
+                        <li>
+                            Ensuring quality control as well as communicating with colleagues to ensure the smooth
+                            operation of the mill.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
