@@ -1,13 +1,25 @@
 ﻿@{
-    ViewBag.Title = "My CV";
+    ViewBag.Title = "Education and Experience";
+
+    @*Arrays to populate the result tables*@
+    // Array to hold notable modules
+    string[] notMod = new string[] {"Programming I (Java)", "Programming II (Java)" , "Software Engineering", "Introduction to Human-Computer Interaction", "Advanced Interaction Design", "Web Design and Construction", "Web Design and Server-Side", "Developing For Mobile"};
+
+    // IDictionary to hold A level results
+    IDictionary<string, string> aLevelRes = new Dictionary<string, string>()
+{ {"Applied ICT", "D"}, {"English Language", "d"} };
+
+    // IDictionary to hold the GCSE results
+    IDictionary<string, string> gCsEResults = new Dictionary<string, string>() { { "Maths", "B" }, { "English", "B" }, { "Science", "B" }, { "Additional Science", "C" }, { "ICT", "A" }, { "Drama", "A" }, { "Media", "B" }, { "History", "B" }, { "French", "B" }, { "German", "C" } };
 }
+
+
 <div class="container-fluid">
     <div class="cntr">
-        <h2>@ViewBag.Title.</h2>
-        <h3>@ViewBag.Message</h3>
+        <h1>@ViewBag.Title.</h1>
         <hr />
-        <span class=" glyphicon glyphicon-education"></span>
-        <h1> Education </h1>
+        <span class= "glyphicon glyphicon-education"></span>
+        <h2> Education </h2>
         <hr />
     </div>
     <div class="panel-group" id="education">
@@ -71,7 +83,14 @@
                                 </li>
                             </ul>
                             <h4>Notable Modules:</h4>
-                            <ul></ul>
+                            <ul class = "list-inline">
+                                @foreach (var n in notMod)
+                                {
+                                    <li>
+                                        &#9654; @n
+                                    </li>
+                                }
+                            </ul>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <img src="@Url.Content("~/Content/Images/cv/nclWeb.png")" alt="NewcastleUni"
@@ -162,14 +181,27 @@
         <div id="collapseBP" class="panel-collapse collapse">
             <div class="panel-body">
                 <h3>A-Levels</h3>
-                <table class="table-striped cntr resTable">
+                <table class="table table-striped cntr resTable">
                     <thead>
                         <tr>
                             <th>SUBJECT</th>
                             <th>GRADE ACHIEVED</th>
                         </tr>
                     <thead>
-                    <tbody></tbody>
+                    <tbody>
+                        @foreach (var res in aLevelRes)
+                        {
+                            <tr>
+                                <td>
+                                    @res.Key
+                                </td>
+
+                                <td>
+                                    @res.Value
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -190,14 +222,27 @@
         <div id="collapseMBS" class="panel-collapse collapse">
             <div class="panel-body">
                 <h2>GCSEs</h2>
-                <table class="table-striped cntr resTable">
+                <table class="table table-striped cntr resTable">
                     <thead>
                         <tr>
                             <th>SUBJECT</th>
                             <th>GRADE ACHIEVED</th>
                         </tr>
                     <thead>
-                    <tbody></tbody>
+                    <tbody>
+                        @foreach (var res in gCsEResults)
+                        {
+                            <tr>
+                                <td>
+                                    @res.Key
+                                </td>
+
+                                <td>
+                                    @res.Value
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -321,3 +366,4 @@
         </div>
     </div>
 </div>
+

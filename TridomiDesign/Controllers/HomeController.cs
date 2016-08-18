@@ -13,14 +13,14 @@ namespace TridomiDesign.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Cv()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Projects()
         {
             ViewBag.Message = "Your contact page.";
 
